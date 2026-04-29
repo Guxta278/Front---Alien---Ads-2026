@@ -1,39 +1,56 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
-    background-color: rgb(37, 37, 37);
+    background-color: rgb(22, 21, 21);
     color: white;
     font-family: 'Segoe UI';
     margin: 0 auto;
-    padding: 15px;
 }
 
-#inicio{background-color: rgb(31, 31, 31);}
-#meio{background-color: rgb(31, 31, 31);}
-#fim{background-color: rgb(31, 31, 31);}
 a{
     color: white;
     text-decoration: none;
 }
 
 a:hover{
-    color:rgb(24, 24, 24)
+    color:green
 }
 
-header{ 
+header{
+    padding: 15px;
+    margin: 0 auto;
+    top: 0;
+    z-index: 1000;
     position:sticky;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color: rgb(22, 21, 21);
 }
 
 .container{
-
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+#início{
+
+}
+
+#sobre{
+    
+}
+
+#contato{
+    background-color: rgb(43, 43, 43);    
+    padding: 15px;
 }
 
 h2{
@@ -90,4 +107,21 @@ input{
 
 #btn-enviar:hover{
     cursor: pointer;
+}
+
+footer{
+    background-color: rgb(43, 43, 43);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width:780px) {
+    .container{
+        flex-direction: column;
+    }
+}
+.imgbody{
+    width: 250px;
+    height: 250px;
 }
